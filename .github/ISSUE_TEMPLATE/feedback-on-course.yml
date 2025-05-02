@@ -1,5 +1,5 @@
 name: 💬 Feedback on Course Material
-description: Help us improve the IKEA Camunda training by submitting feedback on the exercises.
+description: Submit feedback on a specific part or file in the IKEA Camunda training material.
 title: "[Feedback] "
 labels: ["feedback", "course"]
 assignees: []
@@ -9,53 +9,49 @@ body:
     attributes:
       value: |
         🙏 **Thank you for reviewing the IKEA Camunda training material!**
-        Your feedback helps us make the course better.
+        This form is for **one specific comment or piece of feedback**.  
+        Please submit a new issue for each separate comment you want to make.  
+        Be as clear as possible, and reference the exact **file or step** you are commenting on.
 
   - type: input
-    id: part
+    id: file
     attributes:
-      label: Which part of the course are you giving feedback on?
-      description: E.g., "Part 3 - Exception Handling"
-      placeholder: "Part 1 - BPMN Basics"
+      label: Which file or step does your feedback relate to?
+      description: Provide the exact filename or step number if possible.
+      placeholder: "part-03-exception-handling/final/thumbnails-production.py"
     validations:
       required: true
 
   - type: textarea
-    id: clarity
+    id: feedback
     attributes:
-      label: Were any instructions unclear or confusing?
-      placeholder: "I was unsure about..."
+      label: What is your feedback?
+      description: Describe what you found unclear, incorrect, missing, or worth improving.
+      placeholder: "The instructions in this file were hard to follow because..."
     validations:
-      required: false
+      required: true
 
   - type: textarea
-    id: errors
+    id: why
     attributes:
-      label: Did you find any errors or missing steps?
-      placeholder: "Step 4 mentions a file that doesn't exist..."
-    validations:
-      required: false
-
-  - type: textarea
-    id: positives
-    attributes:
-      label: What worked well?
-      placeholder: "I liked how..."
+      label: Why is this important?
+      description: Help us understand why the issue matters—does it block learning, cause confusion, etc.?
+      placeholder: "Because without this clarification, I couldn't complete the task..."
     validations:
       required: false
 
   - type: input
-    id: duration
+    id: time_spent
     attributes:
-      label: How long did it take to complete this part?
+      label: How long did it take you to work through this part?
       placeholder: "Approximate time in minutes"
     validations:
-      required: true
+      required: false
 
   - type: textarea
-    id: other
+    id: suggestions
     attributes:
-      label: Other comments or suggestions?
-      placeholder: "You could consider adding..."
+      label: Optional suggestions?
+      placeholder: "You could consider rewording the example or adding a screenshot..."
     validations:
       required: false
