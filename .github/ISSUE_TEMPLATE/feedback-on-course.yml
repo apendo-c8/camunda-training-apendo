@@ -1,8 +1,7 @@
 name: 💬 Feedback on Course Material
 description: Submit feedback on a specific part or file in the IKEA Camunda training material.
 title: "[Feedback] "
-labels: ["feedback", "course"]
-assignees: []
+labels: ["feedback"]
 
 body:
   - type: markdown
@@ -30,28 +29,3 @@ body:
       placeholder: "The instructions in this file were hard to follow because..."
     validations:
       required: true
-
-  - type: textarea
-    id: why
-    attributes:
-      label: Why is this important?
-      description: Help us understand why the issue matters—does it block learning, cause confusion, etc.?
-      placeholder: "Because without this clarification, I couldn't complete the task..."
-    validations:
-      required: false
-
-  - type: input
-    id: time_spent
-    attributes:
-      label: How long did it take you to work through this part?
-      placeholder: "Approximate time in minutes"
-    validations:
-      required: false
-
-  - type: textarea
-    id: suggestions
-    attributes:
-      label: Optional suggestions?
-      placeholder: "You could consider rewording the example or adding a screenshot..."
-    validations:
-      required: false
