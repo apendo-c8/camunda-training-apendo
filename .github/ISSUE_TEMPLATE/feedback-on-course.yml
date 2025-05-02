@@ -1,0 +1,61 @@
+name: 💬 Feedback on Course Material
+description: Help us improve the IKEA Camunda training by submitting feedback on the exercises.
+title: "[Feedback] "
+labels: ["feedback", "course"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🙏 **Thank you for reviewing the IKEA Camunda training material!**
+        Your feedback helps us make the course better.
+
+  - type: input
+    id: part
+    attributes:
+      label: Which part of the course are you giving feedback on?
+      description: E.g., "Part 3 - Exception Handling"
+      placeholder: "Part 1 - BPMN Basics"
+    validations:
+      required: true
+
+  - type: textarea
+    id: clarity
+    attributes:
+      label: Were any instructions unclear or confusing?
+      placeholder: "I was unsure about..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: errors
+    attributes:
+      label: Did you find any errors or missing steps?
+      placeholder: "Step 4 mentions a file that doesn't exist..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: positives
+    attributes:
+      label: What worked well?
+      placeholder: "I liked how..."
+    validations:
+      required: false
+
+  - type: input
+    id: duration
+    attributes:
+      label: How long did it take to complete this part?
+      placeholder: "Approximate time in minutes"
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Other comments or suggestions?
+      placeholder: "You could consider adding..."
+    validations:
+      required: false
