@@ -21,7 +21,7 @@ If you finish early:
 - `part-02-worker-basics/starter/p2s-image-production-process.bpmn`  
   → Your starting point BPMN model.
 
-- `part-02-worker-basics/starter/image-enhancement.py`  
+- `part-02-worker-basics/starter/p2s-image-enhancement.py`  
   → Your Python starter script to build the worker.
 
 ---
@@ -60,7 +60,7 @@ By completing this exercise, you will learn to:
 ---
 ### 3. Complete the Python Job Worker
 
-Open the file `image-enhancement.py` in **VS Code**. You will see a working script that connects to your Camunda cluster, but it doesn’t yet define what the worker should do.
+Open the file `p2s-image-enhancement.py` in **VS Code**. You will see a working script that connects to your Camunda cluster, but it doesn’t yet define what the worker should do.
 
 Follow these steps to complete the job worker:
 
@@ -143,7 +143,7 @@ This sets a new variable in the process instance, which downstream tasks can use
 
 💾 Save the file and run it from the terminal:
 
-    python image-enhancement.py
+    python p2s-image-enhancement.py
 
 Leave it running — it will wait for jobs from Camunda to pick up.
 
@@ -164,7 +164,7 @@ Follow the steps below to test your process with live workers:
 3. Open a terminal window and navigate to the `part-02-worker-basics/starter` folder.
 4. Start the image enhancement worker:
     ```
-    py image-enhancement.py
+    py p2s-image-enhancement.py
     ```
 5. Open a second terminal window and navigate to the `python/windows` folder.
 6. Start the job runner:

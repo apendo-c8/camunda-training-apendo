@@ -26,11 +26,11 @@ Before starting, make sure you have:
 
 - ✅ **Visual Studio Code (VS Code)** installed  
   → [Download](https://code.visualstudio.com/)  
-    Open the repository folder.
+    - Open the repository folder.
 
 - ✅ **Bruno** installed  
   → [Download Bruno](https://www.usebruno.com/)   
-    Open bruno/training-collection folder. 
+    - Open bruno/training-collection folder. 
 
 ---
 
@@ -59,7 +59,7 @@ By completing this assignment, you will:
 
 ## ✅ Instructions
 
-### 1. Create a Cluster
+### 1. Create a Camunda Cluster
 
 - Go to the **Clusters** section in the [Camunda Console](https://console.cloud.camunda.io/)
 - Click **"Create Cluster"**
@@ -67,7 +67,7 @@ By completing this assignment, you will:
 - Select a region (e.g., `bru-2`)
 - Click **Create**
 
-### 2. Generate Client Credentials
+### 2. Generate Cluster Client Credentials
 
 - Open your cluster and go to the **API** tab
 - Click **"Create new client"**

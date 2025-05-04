@@ -16,7 +16,7 @@ You have approximately **20 minutes** to complete all activities in Part 3, incl
 
 - `part-03-exception-handling/starter/p3s-image-production-process.bpmn`  
   → Your **starting point**: a basic process that includes model upload and image rendering steps.  
-- `part-03-exception-handling/starter/thumbnails-production.py`  
+- `part-03-exception-handling/starter/p3s-thumbnails-production.py`  
   → A **starter Python script** that logs and returns thumbnails for an image. You will extend it to simulate and throw a business error.
 
 ---
@@ -62,7 +62,7 @@ By completing this assignment, you will:
 
 ### 4. Complete the Python Job Worker
 
-1. Open the `thumbnails-production.py` script in **VS Code**  
+1. Open the `p3s-thumbnails-production.py` script in **VS Code**  
 2. Modify the `produce_thumbnails()` function to simulate a business rule violation:
    - If `imageRenderingQuality` is below `0.7` and `imageEnhancementQuality` is also below `0.7`, raise an error.
    - Otherwise, generate and return a list of thumbnail IDs.
