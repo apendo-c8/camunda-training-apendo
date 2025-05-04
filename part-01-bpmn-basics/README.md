@@ -148,4 +148,4 @@ Follow these steps to test your process:
 
 By the end of this exercise, you’ll have transformed a linear BPMN model into a more dynamic, realistic process using decision logic and reusable modeling structures.
 
-Great job and happy modeling! 🎉
+**Great job and happy modeling! 🎉**

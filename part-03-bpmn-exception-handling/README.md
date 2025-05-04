@@ -168,4 +168,4 @@ By completing this assignment, you will:
 
 By the end of this exercise, you will have transformed a simple BPMN model into a **fault-tolerant and resilient process**, capable of handling real-world exception scenarios dynamically through a Python Job Worker.
 
-Great job and happy programming! 🎉
+**Great job and happy modeling! 🎉**

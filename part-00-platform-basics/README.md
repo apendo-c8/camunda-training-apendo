@@ -103,4 +103,4 @@ Replace [path/to/downloaded/file] with the actual path to the downloaded environ
 
 You are now ready to build, deploy, and run BPMN processes in Camunda Platform 8 throughout the training.
 
-Great job and happy modeling! 🎉
+**Great job and happy modeling! 🎉**

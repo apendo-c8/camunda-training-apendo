@@ -206,4 +206,4 @@ By completing this assignment, you will:
 
 By the end of this exercise, you will have transformed a basic BPMN process into a **resilient, incident-aware workflow**, fully capable of handling recoverable and non-recoverable errors using both workers and the Zeebe REST API.
 
-**Great job and happy programming! 🎉**
+**Great job and happy modeling! 🎉**

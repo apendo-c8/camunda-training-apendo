@@ -211,4 +211,4 @@ By completing this assignment, you've:
 - Implemented your first Python worker using `pyzeebe`  
 - Connected BPMN execution to real backend logic
 
-Great job and happy modeling! 🎉
+**Great job and happy modeling! 🎉**

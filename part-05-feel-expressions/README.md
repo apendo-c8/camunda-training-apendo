@@ -128,4 +128,4 @@ In the **Camunda Web Modeler**, activate the **Space Tool** from the palette to 
 
 By the end of this exercise, you’ll have transformed a linear BPMN model into a more dynamic, realistic process using decision logic and reusable modeling structures.
 
-Great job and happy modeling! 🎉
+**Great job and happy modeling! 🎉**
