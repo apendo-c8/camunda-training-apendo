@@ -25,10 +25,12 @@ Before starting, make sure you have:
   → `git clone https://github.com/apendo-c8/camunda-training.git`
 
 - ✅ **Visual Studio Code (VS Code)** installed  
-  → [Download](https://code.visualstudio.com/)
+  → [Download](https://code.visualstudio.com/)  
+    Open the repository folder.
 
 - ✅ **Bruno** installed  
-  → [Download Bruno](https://www.usebruno.com/)
+  → [Download Bruno](https://www.usebruno.com/)   
+    Open bruno/training-collection folder. 
 
 ---
 
