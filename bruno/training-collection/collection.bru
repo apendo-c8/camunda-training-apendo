@@ -13,7 +13,7 @@ vars:pre-request {
   camundaScope: {{process.env.CAMUNDA_CREDENTIALS_SCOPES}}
   camundaAudience: {{process.env.ZEEBE_TOKEN_AUDIENCE}}
   camundaAuthUrl: {{process.env.ZEEBE_AUTHORIZATION_SERVER_URL}}
-  camundaGrantType: {{process.env.CAMUNDA_GRANT_TYPE}}
+  camundaGrantType: client_credentials
 }
 
 docs {
