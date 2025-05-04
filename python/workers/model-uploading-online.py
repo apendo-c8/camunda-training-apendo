@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 ENV_PATH = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "..", "bruno", "training-collection", ".env")
 )
-print(f"📥 Loading environment from: {ENV_PATH}")
 load_dotenv(dotenv_path=ENV_PATH)
 
 # Read required credentials
@@ -49,13 +48,13 @@ def main():
             print(f"✅ Model with modelId '{model_id}' was successfully uploaded.")
             return {}
 
-        print("🚀 Worker is running... Press Ctrl+C to stop.")
+        print("🚀 Model Uploading worker (online) is running... Press Ctrl+C to stop.")
         await worker.work()
 
     try:
         asyncio.run(run_worker())
     except KeyboardInterrupt:
-        print("\n👋 Worker stopped by user. Goodbye!")
+        print("\n👋 Model Uploading worker (online) stopped by user. Goodbye!")
 
 if __name__ == "__main__":
     main()

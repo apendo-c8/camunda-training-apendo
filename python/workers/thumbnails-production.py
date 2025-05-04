@@ -8,7 +8,6 @@ from pyzeebe.job.job import Job, JobController
 ENV_PATH = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "..", "bruno", "training-collection", ".env")
 )
-print(f"📥 Loading environment from: {ENV_PATH}")
 load_dotenv(dotenv_path=ENV_PATH)
 
 ZEEBE_CLIENT_ID = os.getenv("ZEEBE_CLIENT_ID")
@@ -57,13 +56,13 @@ def main():
             print(f"✅ Created thumbnail IDs: {thumbnail_ids}")
             return {"thumbnailIds": thumbnail_ids}
 
-        print("🚀 Worker is running... Press Ctrl+C to stop.")
+        print("🚀 Thumbnails Production worker is running... Press Ctrl+C to stop.")
         await worker.work()
 
     try:
         asyncio.run(run())
     except KeyboardInterrupt:
-        print("\n👋 Worker stopped by user.")
+        print("\n👋 Thumbnails Production worker stopped by user.")
 
 if __name__ == "__main__":
     main()

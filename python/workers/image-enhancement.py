@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 ENV_PATH = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "..", "bruno", "training-collection", ".env")
 )
-print(f"📥 Loading environment from: {ENV_PATH}")
 load_dotenv(dotenv_path=ENV_PATH)
 
 # Read required credentials
@@ -46,13 +45,13 @@ def main():
 
             return {"imageEnhancementQuality": enhanced_quality}
 
-        print("🚀 Worker is running... Press Ctrl+C to stop.")
+        print("🚀 Image Enhancement worker is running... Press Ctrl+C to stop.")
         await worker.work()
 
     try:
         asyncio.run(run_worker())
     except KeyboardInterrupt:
-        print("\n👋 Worker stopped by user. Goodbye!")
+        print("\n👋 Image Enhancement worker stopped by user. Goodbye!")
 
 if __name__ == "__main__":
     main()
