@@ -1,5 +1,5 @@
 name: 💬 Feedback on Course Material
-description: Submit feedback on a specific part or file in the IKEA Camunda training material.
+description: Submit feedback on a specific part or file in the Camunda training material.
 title: "[Feedback] "
 labels: ["feedback"]
 
@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        🙏 **Thank you for reviewing the IKEA Camunda training material!**
+        🙏 **Thank you for reviewing the Camunda training material!**
         This form is for **one specific comment or piece of feedback**.  
         Please submit a new issue for each separate comment you want to make.  
         Be as clear as possible, and reference the exact **file or step** you are commenting on.

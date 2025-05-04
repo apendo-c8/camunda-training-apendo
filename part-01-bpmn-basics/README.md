@@ -90,7 +90,7 @@ In Camunda, **Play** is a built-in tool that allows you to deploy, test, and deb
 Follow these steps to test your process:
 
 1. Click on the **Play** tab (next to **Design** and **Implement**).
-2. Select the **IKEA Training Cluster**.
+2. Select the **Training Cluster**.
 3. Wait for the model to be deployed.
 4. Click on the **three dots** next to the blue play button and select **"Edit variables and start instance"**.
 5. Insert the following JSON document into the variables field:
