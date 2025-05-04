@@ -15,21 +15,6 @@ You have approximately **20 minutes** to complete all activities in Part 4.
 - `part-04-instance-incident-handling/starter/p3s-image-production-process.bpmn`  
   → Your **starting point**: a basic process that includes model upload and image rendering steps.
 
-- `python/part-04-runner-online.sh`  
-  → Shell script used to start the job worker that simulates recoverable errors.
-
-- `python/part-04-runner-offline.sh`  
-  → Shell script used to start the job worker that simulates non-recoverable errors.
-
-- `python/clients/start-image-production-process.py`  
-  → Python script to start a new process instance, e.g. with a `modelId`.
-
-- `python/clients/send-image-rendering-message.py`  
-  → Python script to simulate message correlation to complete image rendering.
-
-- `python/workers/model-uploading-offline.py`  
-  → Worker implementation that simulates a backend outage and retries with exponential backoff.
-
 ---
 
 ## 🎯 Learning Goals
@@ -73,10 +58,10 @@ By completing this assignment, you will:
 ### 1. Incident with Recoverable Error
 
 1. Open a terminal window.
-2. Navigate to the `python` folder.
+2. Navigate to the `python/windows` folder.
 3. Start the job worker using:
    ```bash
-   sh part-04-runner-online.sh
+   python part-04-runner-online.py
    ```
 4. Ensure the worker starts correctly and connects to the cluster.
 5. Open another terminal and navigate to the `clients` folder inside the `python` directory.
@@ -120,10 +105,10 @@ By completing this assignment, you will:
 > ⚠️ Stop the job workers first: `ctrl+C`
 
 1. Open a terminal window.
-2. Navigate to the `python` folder.
+2. Navigate to the `python/windows` folder.
 3. Start the job worker using:
    ```bash
-   sh part-04-runner-offline.sh
+   python part-04-runner-offline.py
    ```
 4. Open another terminal and navigate to the `clients` folder.
 5. Start a process instance:
@@ -159,7 +144,7 @@ By completing this assignment, you will:
 8. Stop the offline worker: `ctrl+C`
 9. Start the recoverable worker:
    ```bash
-   sh part-04-runner-online.sh
+   python part-04-runner-online.py
    ```
 10. Retry the incident in Operate.
 11. Finalize the process:

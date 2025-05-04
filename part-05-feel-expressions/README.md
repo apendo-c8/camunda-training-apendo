@@ -84,9 +84,9 @@ In the **Camunda Web Modeler**, activate the **Space Tool** from the palette to 
 ### 1. Multi-instance Service Task with FEEL Expression
 
 1. Open a terminal window.  
-2. Navigate to the `python` folder.  
+2. Navigate to the `python/windows` folder.  
 3. Start the job worker using:  
-   `sh part-05-runner.sh`  
+   `python part-05-runner.py`  
 4. Ensure the worker starts correctly and connects to the cluster.  
 5. Open another terminal and navigate to the `clients` folder inside the `python` directory.  
 6. Start a process instance using:  

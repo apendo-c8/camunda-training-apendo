@@ -149,18 +149,42 @@ Leave it running — it will wait for jobs from Camunda to pick up.
 
 ---
 
-### 4. Deploy Your BPMN Diagram
+## 🚀 Deploy Your Process Diagram
 
-- In Web Modeler, click **Deploy**
-- Choose your training cluster
+- In the **Camunda Web Modeler**, deploy your updated BPMN model to your training cluster
 
 ---
 
-### 5. Run the Process
+## ▶️ Execute Your Process Diagram
 
-- Start a new instance from the Modeler UI
-- Provide an input variable `imageId` (e.g. `"img-01"`) and optionally `imageRenderingQuality` (e.g. `0.6`)
-- Watch your terminal to see the job worker activate and enhance the image
+Follow the steps below to test your process with live workers:
+
+1. Open **Camunda Operate** and go to the **Processes** tab.
+2. Confirm that your **Image Production Process** is deployed.
+3. Open a terminal window and navigate to the `part-02-worker-basics/starter` folder.
+4. Start the image enhancement worker:
+    ```
+    py image-enhancement.py
+    ```
+5. Open a second terminal window and navigate to the `python/windows` folder.
+6. Start the job runner:
+    ```
+    py part-02-runner-online.py
+    ```
+7. Ensure both workers have started successfully and are connected to the cluster.
+8. Open a third terminal window and navigate to the `clients` folder inside the `python` directory.
+9. Start a new process instance:
+    ```
+    python start-image-production-process.py mid-1
+    ```
+10. Send the image rendering message to the process instance:
+    ```
+    python send-image-rendering-message.py mid-1 iid-1 0.6
+    ```
+11. Check the printouts in the terminal windows and observe the process path in **Camunda Operate**.
+
+> 💡 **Tip:**  
+> Try using different values for `imageRenderingQuality` (e.g., `0.4`, `0.9`) to explore how the process behaves under different conditions.
 
 ---
 

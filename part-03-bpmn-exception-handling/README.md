@@ -106,9 +106,9 @@ By completing this assignment, you will:
 ### 1. Exception handling caused by a Timeout
 
 1. Open a terminal window.
-2. Navigate to the `python` folder.
+2. Navigate to the `python/windows` folder.
 3. Start the job worker using:
-   `sh part-03-runner-online.sh`
+   `python part-03-runner-online.py`
 4. Ensure the worker starts correctly and connects to the cluster.
 5. Open another terminal and navigate to the `clients` folder inside the `python` directory.
 6. Start a process instance using:
@@ -126,9 +126,9 @@ By completing this assignment, you will:
 > ⚠️ Stop the job workers first: `ctrl+C`
 
 1. Open a terminal window.
-2. Navigate to the `python` folder.
+2. Navigate to the `python/windows` folder.
 3. Start the job worker using:
-   `sh part-03-runner-online.sh`
+   `python part-03-runner-online.py`
 4. Ensure the worker starts correctly and connects to the cluster.
 5. Open another terminal and navigate to the `clients` folder inside the `python` directory.
 6. Start a process instance using:
