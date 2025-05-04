@@ -9,7 +9,7 @@ You will start with a BPMN file and a boilerplate Python script located in the f
 
 ## ⏳ Time Available
 
-You have approximately **20 minutes** to complete the exercise.
+You have approximately **30 minutes** to complete the exercise.
 
 If you finish early:
 - ➕ Add an **outcome mapping** (e.g. quality status) to the BPMN model.

@@ -8,7 +8,7 @@ You will start with a boilerplate Python script located in the **part-03-excepti
 
 ## ⏳ Time Available
 
-You have approximately **20 minutes** to complete all activities in Part 3, including programming, deployment, and executing your BPMN process.
+You have approximately **30 minutes** to complete all activities in Part 3, including programming, deployment, and executing your BPMN process.
 
 ---
 

@@ -16,13 +16,6 @@ Once your environment is ready, start working through the training exercises:
 
 > 📌 **Note:** If you don't have time to complete and test each part, you can use the provided final version for that part to continue with the training.
 
----
-
-## ✅ Ready to Start!
-
-Once you have completed these steps, you are ready to begin!  
-Head over to **Part 0** and follow the instructions inside.
-
 If you encounter any issues during the setup or while working on the exercises, please contact the training organizers by joining the "Support" room in Microsoft Teams.
 
-Happy learning and good luck! 🎉
+**Happy modeling! 🎉**

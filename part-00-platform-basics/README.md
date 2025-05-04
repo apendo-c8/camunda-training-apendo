@@ -36,7 +36,7 @@ Before starting, make sure you have:
 
 ## ⏳ Time Available
 
-You have approximately **20 minutes** to complete all activities in Part 0, including cluster creation, credential setup, and project initialization.
+You have approximately **10 minutes** to complete all activities in Part 0, including cluster creation, credential setup, and project initialization.
 
 ---
 
@@ -84,6 +84,12 @@ python utils/convert_env.py [path/to/downloaded/file] bruno/training-collection/
 ```
 
 Replace [path/to/downloaded/file] with the actual path to the downloaded environment file.
+
+### 3. Create a Camunda Modeler Project
+
+- Go to **Home** in [Camunda Web Modeler](https://modeler.camunda.io/)
+- Click **"Create Project"**
+- Name your Project (e.g., `Camunda Training`)
 
 ---
 

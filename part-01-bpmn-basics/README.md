@@ -6,7 +6,7 @@ In this assignment, you’ll evolve a simple image production process into a mor
 
 ## ⏳ Time Available
 
-You have approximately **20 minutes** available to complete all activities in Part 1, including modeling, testing, and exploring your BPMN process.
+You have approximately **15 minutes** available to complete all activities in Part 1, including modeling, testing, and exploring your BPMN process.
 
 ---
 
@@ -79,7 +79,7 @@ Inside the sub-process, perform the following steps:
    - Set it as the **Default Flow**.
 8. Select the **"Enhance Image"** service task:
    - Set its **Job Type** to:  
-     ➔ `image-enhancement`
+     ➔ `image_enhancement`
      
 ---
 
