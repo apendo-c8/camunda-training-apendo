@@ -164,12 +164,12 @@ Follow the steps below to test your process with live workers:
 3. Open a terminal window and navigate to the `part-02-worker-basics/starter` folder.
 4. Start the image enhancement worker:
     ```
-    py p2s-image-enhancement.py
+    pythonp2s-image-enhancement.py
     ```
 5. Open a second terminal window and navigate to the `python/windows` folder.
 6. Start the job runner:
     ```
-    py part-02-runner-online.py
+    pythonpart-02-runner-online.py
     ```
 7. Ensure both workers have started successfully and are connected to the cluster.
 8. Open a third terminal window and navigate to the `clients` folder inside the `python` directory.
