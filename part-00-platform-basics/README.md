@@ -26,11 +26,11 @@ Before starting, make sure you have:
 
 - ✅ **Visual Studio Code (VS Code)** installed  
   → [Download](https://code.visualstudio.com/)  
-    - Open the repository folder.
+    - Open the `camunda-training` repository folder.
 
 - ✅ **Bruno** installed  
   → [Download Bruno](https://www.usebruno.com/)   
-    - Open bruno/training-collection folder. 
+    - Open `bruno/training-collection` folder. 
 
 ---
 
