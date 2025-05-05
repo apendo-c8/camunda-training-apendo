@@ -61,11 +61,16 @@ By completing this assignment, you will:
 
 ### 1. Create a Camunda Cluster
 
-- Go to the **Clusters** section in the [Camunda Console](https://console.cloud.camunda.io/)
-- Click **"Create Cluster"**
-- Name your cluster (e.g., `training-cluster`)
-- Select a region (e.g., `bru-2`)
-- Click **Create**
+- Navigate to the [Camunda Console](https://console.cloud.camunda.io/) and open the **Clusters** section.
+- Click **Create Cluster**.
+- Enter a name for your cluster (e.g., `training-cluster`).
+- Set **Customer Type** to `Trial Cluster`.
+- Leave the **Cluster Tag** as `dev`.
+- Choose **GCP** as the cloud provider.
+- Select **Belgium, Europe (europe-west1)** as the region.
+- For **Version**, choose `Camunda 8.7+genX`.
+- Disable **Automatic Cluster Patch Updates**.
+- Click **Create Cluster** to finalize.
 
 ### 2. Generate Cluster Client Credentials
 
