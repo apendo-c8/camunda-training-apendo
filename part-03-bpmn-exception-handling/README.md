@@ -107,9 +107,7 @@ By completing this assignment, you will:
 
 1. Open a terminal window and navigate to the `part-03-bpmn-exception-handling/starter` folder.
 2. Start the image enhancement worker:
-    ```
-    python p3s-thumbnails-production.py
-    ```
+    `python p3s-thumbnails-production.py`
 3. Open a second terminal window and navigate to the `python/windows` folder.
 4. Start the job worker using:
    `python part-03-runner.py`
@@ -131,9 +129,7 @@ By completing this assignment, you will:
 
 1. Open a terminal window and navigate to the `part-03-bpmn-exception-handling/starter` folder.
 2. Start the image enhancement worker:
-    ```
-    python p3s-thumbnails-production.py
-    ```
+    `python p3s-thumbnails-production.py`
 3. Open a second terminal window and navigate to the `python/windows` folder.
 4. Start the job worker using:
    `python part-03-runner.py`
