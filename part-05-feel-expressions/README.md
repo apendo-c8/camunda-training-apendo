@@ -32,7 +32,6 @@ By completing this assignment, you will learn how to:
 ### 1. Open the Starter BPMN File
 
 - Upload `p5s-image-production-process.bpmn` to your dedicated training folder in the **Camunda Web Modeler**.
-- Open the file and locate the **Model Uploading** service task.
 
 ---
 
@@ -41,9 +40,11 @@ By completing this assignment, you will learn how to:
 In the **Camunda Web Modeler**, activate the **Space Tool** from the palette to create some room between the "Produce Thumbnails" step and the final end events. Then insert a **Task** element (also found in the palette) into the newly created space.
 
 1. Click on the **Change element** icon and select **"Service Task"** and label it **Store Asset**.  
-2. Click on the **Change element** icon again and select **Sequential Multi-instance** from the upper-right corner of the popup dialog.  
-3. Expand the **Properties** panel and locate the **Multi-instance** section.  
-
+2. Set its **Job Type** to:  
+     ➔ `asset_storage`
+3. Click on the **Change element** icon again and select **Sequential Multi-instance** from the upper-right corner of the popup dialog.  
+4. Expand the **Properties** panel and locate the **Multi-instance** section.  
+ 
     > ℹ️ **Note:**  
     > The Multi-instance section contains four fields:  
     > - **Input collection** – the list of values to iterate over.  
@@ -51,7 +52,7 @@ In the **Camunda Web Modeler**, activate the **Space Tool** from the palette to 
     > - **Output collection** – the name of the array that will store the results of each iteration.  
     > - **Output element** – the name of the variable used to return the result of each individual iteration.  
 
-4. In the **Input collection** field, insert this FEEL expression:  
+5. In the **Input collection** field, insert this FEEL expression:  
    ```javascript
    for x in 1..(count(thumbnailIds) + 1) return if x = 1 then imageId else thumbnailIds[x - 1]
    ```
@@ -62,13 +63,13 @@ In the **Camunda Web Modeler**, activate the **Space Tool** from the palette to 
     > If `x` is 1, it returns the `imageId`.  
     > Otherwise, it retrieves the corresponding thumbnail ID by subtracting one from `x`.
 
-5. In **Input element**, enter `imageId`.  
+6. In **Input element**, enter `imageId`.  
     > This defines the loop variable name. Each iteration of the multi-instance task will use `imageId` to represent the current value from the collection.
 
-6. In **Output collection**, enter `assetIds`.  
+7. In **Output collection**, enter `assetIds`.  
     > After each iteration, the result (e.g. a stored asset reference) is collected into the `assetIds` array.
 
-7. In **Output element**, enter `assetId`.  
+8. In **Output element**, enter `assetId`.  
     > This is the name of the variable returned by each instance of the task and added to the `assetIds` list.
 
 ---
