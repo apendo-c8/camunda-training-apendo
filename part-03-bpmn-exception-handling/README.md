@@ -112,7 +112,7 @@ By completing this assignment, you will:
 4. Ensure the worker starts correctly and connects to the cluster.
 5. Open another terminal and navigate to the `clients` folder inside the `python` directory.
 6. Start a process instance using:
-   `python start-image-production-process.py mid_1`
+   `python start-image-production-process.py mid-1`
 7. Wait 30 seconds and go to Operate and open your process instance.
 8. In the instance history, notice the `30 s` record which indicates that the timer event was triggered and the path pointing back to the gateway was taken.
    > The process diagram also shows how many times the service task was triggered.
