@@ -105,18 +105,22 @@ By completing this assignment, you will:
 
 ### 1. Exception handling caused by a Timeout
 
-1. Open a terminal window.
-2. Navigate to the `python/windows` folder.
-3. Start the job worker using:
-   `python part-03-runner-online.py`
-4. Ensure the worker starts correctly and connects to the cluster.
-5. Open another terminal and navigate to the `clients` folder inside the `python` directory.
-6. Start a process instance using:
+1. Open a terminal window and navigate to the `part-03-bpmn-exception-handling/starter` folder.
+2. Start the image enhancement worker:
+    ```
+    python p3s-thumbnails-production.py
+    ```
+3. Open a second terminal window and navigate to the `python/windows` folder.
+4. Start the job worker using:
+   `python part-03-runner.py`
+5. Ensure the worker starts correctly and connects to the cluster.
+6. Open another terminal and navigate to the `clients` folder inside the `python` directory.
+7. Start a process instance using:
    `python start-image-production-process.py mid-1`
-7. Wait 30 seconds and go to Operate and open your process instance.
-8. In the instance history, notice the `30 s` record which indicates that the timer event was triggered and the path pointing back to the gateway was taken.
+8. Wait 30 seconds and go to Operate and open your process instance.
+9. In the instance history, notice the `30 s` record which indicates that the timer event was triggered and the path pointing back to the gateway was taken.
    > The process diagram also shows how many times the service task was triggered.
-9. To finish the instance, run:
+11. To finish the instance, run:
    `python send-image-rendering-message.py mid-1 iid-1 0.8`
 
 ---
@@ -125,21 +129,25 @@ By completing this assignment, you will:
 
 > ⚠️ Stop the job workers first: `ctrl+C`
 
-1. Open a terminal window.
-2. Navigate to the `python/windows` folder.
-3. Start the job worker using:
-   `python part-03-runner-online.py`
-4. Ensure the worker starts correctly and connects to the cluster.
-5. Open another terminal and navigate to the `clients` folder inside the `python` directory.
-6. Start a process instance using:
+1. Open a terminal window and navigate to the `part-03-bpmn-exception-handling/starter` folder.
+2. Start the image enhancement worker:
+    ```
+    python p3s-thumbnails-production.py
+    ```
+3. Open a second terminal window and navigate to the `python/windows` folder.
+4. Start the job worker using:
+   `python part-03-runner.py`
+5. Ensure the worker starts correctly and connects to the cluster.
+6. Open another terminal and navigate to the `clients` folder inside the `python` directory.
+7. Start a process instance using:
    `python start-image-production-process.py mid-1`
-7. To continue the instance, run:
-   python send-image-rendering-message.py mid-1 iid-1 0.4
+8. To continue the instance, run:
+   `python send-image-rendering-message.py mid-1 iid-1 0.4`
 
    > The value `0.4` indicates low image quality. After enhancement, it becomes `0.6`, which still falls below the 0.7 threshold, triggering a business error.
 
-8. Go to Operate and verify the path taken.
-9. Watch the printout from your worker:
+9. Go to Operate and verify the path taken.
+10. Watch the printout from your worker:
 
        📦 Thumbnails Production Worker in action with variables: {'imageId': 'iid-1', 'modelId': 'mid-1', 'imageRenderingQuality': 0.4, 'imageEnhancementQuality': 0.6000000000000001}
        🖼️ Processing image: iid-1
