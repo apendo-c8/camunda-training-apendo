@@ -82,7 +82,7 @@
     </bpmn:sequenceFlow>
   </bpmn:process>
   <bpmn:error id="Error_0jz7b6w" name="ImageEnhancementError" errorCode="image-enhancement-error" />
-  <bpmn:message id="Message_1r82089" name="MessageEnhanceImageAbort">
+  <bpmn:message id="Message_1r82089" name="ImageEnhancementAbortMessage">
     <bpmn:extensionElements>
       <zeebe:subscription correlationKey="=imageId" />
     </bpmn:extensionElements>
