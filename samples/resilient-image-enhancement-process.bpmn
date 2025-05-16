@@ -33,7 +33,7 @@
       <bpmn:outgoing>Flow_00801ud</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_1xwz0ka" name="Yes" sourceRef="Gateway_1jr913a" targetRef="Activity_1l1an6s">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=imageRendeeringQuality &lt; 0.7</bpmn:conditionExpression>
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=imageQuality &lt; 0.7</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
